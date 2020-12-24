@@ -15,7 +15,7 @@ function TaskItem(props) {
         {task.startChangeText ?
           <p>
             <input
-              value={task.text}
+              value={task.title}
               onChange={e => onChangeTextValue(e, task.id)}
             />
             <button onClick={e => startAndSaveEditedText(task.id)}>

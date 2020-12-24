@@ -11,7 +11,7 @@ const StrikeOutTask = ({onStrikeOutTask, task}) => {
         onChange={e => onStrikeOutTask(e, task.id)}
         checked={task.done}
       />
-      <label for={task.id} className={task.done && "done"}> {task.text}</label>
+      <label htmlFor={task.id} className={task.done ? "done" : undefined }> {task.title}</label>
     </React.Fragment>
   );
 }
